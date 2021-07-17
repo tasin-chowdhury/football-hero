@@ -1,0 +1,141 @@
+/* font style import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common styles */
+header{
+    margin-bottom: 70px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* banner style */
+
+.banner{
+    display: flex;
+    background-image: linear-gradient(rgb(12, 12, 133), rgb(18, 109, 67));
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+
+}
+.banner h1{
+    width: 485px;
+    height: 230px;
+    font-weight: bold;
+    font-size: 64px;
+}
+.banner p{
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.live span{
+    left: 16.67%;
+    right: 16.67%;
+}
+
+.banner-image img{
+    width: 556.01px;
+    height: 438px;
+    margin: 153px 140.99px 86px 102px;
+    
+
+}
+.banner-content:hover p{
+    font-size: 1.5em;
+    transition: font-size 1s;
+}
+
+/* section style */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 180px;
+    margin-left: 210px;
+}
+.player{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px 33px 15px;
+    margin:30px;
+    width: 300px;
+    height: 426px;
+}
+.player-image img{
+    width: 300px;
+    height: 256px;
+    margin-bottom: 0;
+    margin-top: 15px 15px 203px 15px;
+}
+.player-info{
+    width: 300px;
+    height: 154px;
+}
+.player-info h2{
+    color: #18191F;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-info p{
+    width: 300px;
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-top: 0px;
+}
+
+
+/* footer style */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 63px;
+    margin-left: 475px;
+    margin-right: 481.13px;
+    margin-top: 750px;
+}
+.footer-image img{
+    width: 483.87px;
+    height: 110px;
+}
+.social-media-icon img{
+    height: 32px;
+    width: 32px;
+}
+.copyright-text{
+    text-align: right;
+
+}
+
+/* media queries */
+
+/* mobile device */
+
+@media only screen and (max-width:990px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 180px;
+        margin-left: 210px;
+    }
+    .footer-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    }
+    
+}
